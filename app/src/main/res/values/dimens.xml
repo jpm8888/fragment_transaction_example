@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="space_15">5dp</dimen>
+    <dimen name="application_padding">10dp</dimen>
+    <dimen name="dashboard_text">12sp</dimen>
+    <dimen name="space_leave">5dp</dimen>
+</resources>

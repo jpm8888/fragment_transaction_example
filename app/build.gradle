@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.demo"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+ext {
+    appcompat = '27.1.0'
+    constraint = '1.1.1'
+    tedpermission = '2.1.0'
+    retrofit = '2.4.0'
+    gson = '2.4.0'
+    picasso = '2.71828'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "com.android.support:appcompat-v7:$appcompat"
+    implementation "com.android.support:design:$appcompat"
+    implementation "com.android.support.constraint:constraint-layout:$constraint"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit"
+    implementation "com.squareup.retrofit2:converter-gson:$gson"
+    implementation "com.android.support:cardview-v7:$appcompat"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation "com.squareup.picasso:picasso:$picasso"
+}
